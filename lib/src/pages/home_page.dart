@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
             decoration: BoxDecoration(
               color: Theme.of(context).backgroundColor,
             ),
-            child: Image.asset("assets/user.png", fit: BoxFit.fill),
+            child: Image.asset("assets/user.jpg", fit: BoxFit.fill),
           ),
         ).p(8),
       ],
@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Text("Hello,", style: TextStyles.title.subTitleColor),
-        Text("Peter Parker", style: TextStyles.h1Style),
+        Text("Sokhna Diarra", style: TextStyles.h1Style),
       ],
     ).p16;
   }
@@ -83,7 +83,7 @@ class _HomePageState extends State<HomePage> {
         decoration: InputDecoration(
           contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
           border: InputBorder.none,
-          hintText: "Search",
+          hintText: "Recherche",
           hintStyle: TextStyles.body.subTitleColor,
           suffixIcon: SizedBox(
               width: 50,
@@ -103,9 +103,9 @@ class _HomePageState extends State<HomePage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              Text("Category", style: TextStyles.title.bold),
+              Text("Services", style: TextStyles.title.bold),
               Text(
-                "See All",
+                "Voir tout",
                 style: TextStyles.titleNormal
                     .copyWith(color: Theme.of(context).primaryColor),
               ).p(8).ripple(() {})
@@ -118,15 +118,15 @@ class _HomePageState extends State<HomePage> {
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: <Widget>[
-              _categoryCard("Chemist & Drugist", "350 + Stores",
+              _categoryCard("Faire un diagnostic", "Repondez a quelques questions",
                   color: LightColor.green, lightColor: LightColor.lightGreen),
-              _categoryCard("Covid - 19 Specialist", "899 Doctors",
+              _categoryCard("En savoir plus sur le cancer du col de l'uterus", "Symptomes & Depistages",
                   color: LightColor.skyBlue, lightColor: LightColor.lightBlue),
-              _categoryCard("Cardiologists Specialist", "500 + Doctors",
+              _categoryCard("Calendrier", "Programmer un rendez-vous",
                   color: LightColor.orange, lightColor: LightColor.lightOrange),
-              _categoryCard("Dermatologist", "300 + Doctors",
+              _categoryCard("Mes rapports", "Tout sur vous",
                   color: LightColor.green, lightColor: LightColor.lightGreen),
-              _categoryCard("General Surgeon", "500 + Doctors",
+              _categoryCard("Docteurs", "500 + Docteurs",
                   color: LightColor.skyBlue, lightColor: LightColor.lightBlue)
             ],
           ),
@@ -191,8 +191,10 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-        ).ripple(() {}, borderRadius: BorderRadius.all(Radius.circular(20))),
-      ),
+        )).ripple(() {
+        Navigator.pushNamed(context, "/DetailPage");
+
+      }, borderRadius: BorderRadius.all(Radius.circular(20))),
     );
   }
 
@@ -203,7 +205,7 @@ class _HomePageState extends State<HomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              Text("Top Doctors", style: TextStyles.title.bold),
+              Text("Nos docteurs", style: TextStyles.title.bold),
               IconButton(
                   icon: Icon(
                     Icons.sort,

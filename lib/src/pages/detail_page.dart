@@ -169,11 +169,8 @@ class _DetailPageState extends State<DetailPage> {
                             SizedBox(
                               width: 10,
                             ),
-                            FlatButton(
-                              color: Theme.of(context).primaryColor,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10)
-                              ),
+                            TextButton(
+
                               onPressed: () {},
                               child: Text("Make an appointment", style: TextStyles.titleNormal.white,).p(10),
                             ),

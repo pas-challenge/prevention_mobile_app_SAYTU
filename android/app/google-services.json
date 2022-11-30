@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1080793666984",
+    "project_id": "flutter-healthcare-app-e3a30",
+    "storage_bucket": "flutter-healthcare-app-e3a30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080793666984:android:ea1fef4ffe4766b259b99d",
+        "android_client_info": {
+          "package_name": "com.thealphamerc.flutter_healthcare_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080793666984-klsbla5ifgd4j2ftjcqs57e3s1h27rf3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjDXsUM-shS6xuEfE7v9_hNBCYUDMQw4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080793666984-klsbla5ifgd4j2ftjcqs57e3s1h27rf3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
